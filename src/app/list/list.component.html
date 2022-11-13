@@ -1,0 +1,100 @@
+<app-navbar></app-navbar>
+<div class="list">
+  <div class="first-container">
+    <h1
+      style="
+        font-size: 50px;
+        line-height: 1;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+      "
+    >
+      Your area
+    </h1>
+    <button
+      mat-raised-button
+      color="accent"
+      class="add-btn"
+      routerLink="/make-new-list"
+    >
+      <mat-icon style="vertical-align: middle; padding-bottom: 4px"
+        >add</mat-icon
+      >
+      Make new list
+    </button>
+
+    <button
+      mat-raised-button
+      style="margin-left: 50%; font-size: 20px"
+      routerLink="/main"
+    >
+      Back to your list
+    </button>
+  </div>
+
+  <div class="main-container">
+    <div
+      style="
+        width: 100%;
+        border-bottom: 1px solid black;
+        display: flex;
+        flex-direction: row;
+      "
+    >
+      <h1 class="list-name">Company A (List) - To do</h1>
+      <button
+        mat-flat-button
+        style="margin-right: 4%"
+        [matMenuTriggerFor]="menu"
+      >
+        <mat-icon style="scale: 2">more_horiz</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu" xPosition="before">
+        <button mat-menu-item routerLink="/edit">
+          <mat-icon>edit</mat-icon> <span>Edit</span>
+        </button>
+        <button mat-menu-item routerLink="/share">
+          <mat-icon>link</mat-icon> <span>Share</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>delete</mat-icon> <span>Delete</span>
+        </button>
+      </mat-menu>
+    </div>
+
+    <section class="list-content">
+      <div class="element">
+        <mat-checkbox
+          style="font-size: 19px; line-height: 1.4"
+          (click)="showDone1()"
+          >Build server</mat-checkbox
+        >
+        <h1 *ngIf="hide1" style="margin-left: 80%;">DONE</h1>
+      </div>
+      <div class="element">
+        <mat-checkbox
+          style="font-size: 19px; line-height: 1.4"
+          (click)="showDone2()"
+          >Build server</mat-checkbox
+        >
+        <h1 *ngIf="hide2" style="margin-left: 80%;">DONE</h1>
+      </div>
+      <div class="element">
+        <mat-checkbox
+          style="font-size: 19px; line-height: 1.4"
+          (click)="showDone3()"
+          >Build server</mat-checkbox
+        >
+        <h1 *ngIf="hide3" style="margin-left: 80%;">DONE</h1>
+      </div>
+      <div class="element">
+        <mat-checkbox
+          style="font-size: 19px; line-height: 1.4"
+          (click)="showDone4()"
+          >Build server</mat-checkbox
+        >
+        <h1 *ngIf="hide4" style="margin-left: 80%;">DONE</h1>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+<app-navbar></app-navbar>
+<div class="main">
+  <div class="first-container">
+    <h1
+      style="
+        font-size: 50px;
+        line-height: 1;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+      "
+    >
+      Your area
+    </h1>
+    <button mat-raised-button color="accent" class="add-btn" routerLink="/make-new-list">
+      <mat-icon style="vertical-align: middle; padding-bottom: 4px"
+        >add</mat-icon
+      >
+      Make new list
+    </button>
+  </div>
+  <div class="main-container">
+    <div class="lists" style="border: 2px solid black; margin-right: 5%;">
+      <div class="name-list">
+        <p>Company A</p>
+      </div>
+
+      <button class="body-btn" style="width: 100%;" routerLink="/list">
+        <mat-icon style="transform: scale(2)">lock</mat-icon>
+      </button>
+    </div>
+
+    <div class="lists" style="border: 2px solid black; margin-right: 5%;">
+      <div class="name-list">
+        <p>Company B</p>
+      </div>
+
+      <button class="body-btn" style="width: 100%;" routerLink="/list">
+        <mat-icon style="transform: scale(2)">lock</mat-icon>
+      </button>
+    </div>
+
+    <div class="lists" style="border: 2px solid black; margin-right: 5%;">
+      <div class="name-list">
+        <p>Company C</p>
+      </div>
+
+      <button class="body-btn" style="width: 100%;" routerLink="/list">
+        <mat-icon style="transform: scale(2)">lock</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>

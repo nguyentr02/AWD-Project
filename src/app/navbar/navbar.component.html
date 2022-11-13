@@ -1,0 +1,19 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<div class="navbar" style="height: 100px; display: flex;width: 100%; flex-direction: row;">
+  <img
+    class="icon"
+    src="https://thaibeveragecan.com/wp-content/uploads/2022/06/TBC-Lettermark.png"
+    routerLink="/main"
+  />
+  <div style=" display: flex; width: 70%;flex-direction: row; margin-top: 1.5%; padding-left: 60%;">
+    <mat-form-field appearance="fill" style="width: 70%; line-height:1.5; margin-right: 5%;">
+      <input matInput type="text" style="" placeholder="Search tasks" />
+      <button mat-icon-button matPrefix>
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-form-field>
+    <button mat-raised-button color="primary" style="border-radius: 50%; height: 60px; " routerLink="/profile" >
+      <mat-icon>person</mat-icon>
+    </button>
+  </div>
+</div>

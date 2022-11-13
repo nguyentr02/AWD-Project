@@ -1,0 +1,171 @@
+<app-navbar></app-navbar>
+<div class="edit">
+  <div class="first-container">
+    <h1
+      style="
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+      "
+    >
+      Edit Company A - List
+    </h1>
+    <button
+      mat-flat-button
+      color="primary"
+      style="margin-left: 50%; font-size: 20px"
+      routerLink="/list"
+    >
+      Save changes
+    </button>
+  </div>
+  <div class="main-container">
+    <div class="current-name">
+      <h1>Current name:</h1>
+      <p
+        style="
+          background-color: white;
+          width: 80%;
+          margin-left: 1%;
+          line-height: 1.8;
+          font-size: 20px;
+        "
+      >
+        Company A - To do
+      </p>
+    </div>
+    <div class="new-name">
+      <h1>New name:</h1>
+      <input
+        style="
+          background-color: white;
+          width: 80%;
+          margin-left: 1%;
+          font-size: 20px;
+        "
+        placeholder="Only type in if you want to change the original name!!!"
+      />
+    </div>
+    <form>
+      <div class="task">
+        <mat-checkbox>Build server</mat-checkbox>
+        <!-- <div style="display: flex;flex-direction:row;">
+          <mat-icon style="line-height: 1;">arrow_right_alt</mat-icon>
+          <p style="padding-right: 20px;">New name: </p>
+          <mat-form-field>
+            <input matInput>
+          </mat-form-field>
+        </div> -->
+        <button
+          mat-flat-button
+          style="margin-left: 80%"
+          [matMenuTriggerFor]="menu"
+        >
+          <mat-icon>more_horiz</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item routerLink="/edit">
+            <mat-icon>edit</mat-icon> <span>Edit</span>
+          </button>
+          <button mat-menu-item routerLink="/share">
+            <mat-icon>link</mat-icon> <span>Share</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>delete</mat-icon> <span>Delete</span>
+          </button>
+        </mat-menu>
+      </div>
+      <div class="task">
+        <mat-checkbox>Build server</mat-checkbox>
+        <button
+          mat-flat-button
+          style="margin-left: 80%"
+          [matMenuTriggerFor]="menu"
+        >
+          <mat-icon>more_horiz</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item routerLink="/edit">
+            <mat-icon>edit</mat-icon> <span>Edit</span>
+          </button>
+          <button mat-menu-item routerLink="/share">
+            <mat-icon>link</mat-icon> <span>Share</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>delete</mat-icon> <span>Delete</span>
+          </button>
+        </mat-menu>
+      </div>
+      <div class="task">
+        <mat-checkbox>Build server</mat-checkbox>
+        <button
+          mat-flat-button
+          style="margin-left: 80%"
+          [matMenuTriggerFor]="menu"
+        >
+          <mat-icon>more_horiz</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item routerLink="/edit">
+            <mat-icon>edit</mat-icon> <span>Edit</span>
+          </button>
+          <button mat-menu-item routerLink="/share">
+            <mat-icon>link</mat-icon> <span>Share</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>delete</mat-icon> <span>Delete</span>
+          </button>
+        </mat-menu>
+      </div>
+      <div class="task">
+        <mat-checkbox>Build server</mat-checkbox>
+        <button
+          mat-flat-button
+          style="margin-left: 80%"
+          [matMenuTriggerFor]="menu"
+        >
+          <mat-icon>more_horiz</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="before">
+          <button mat-menu-item routerLink="/edit">
+            <mat-icon>edit</mat-icon> <span>Edit</span>
+          </button>
+          <button mat-menu-item routerLink="/share">
+            <mat-icon>link</mat-icon> <span>Share</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>delete</mat-icon> <span>Delete</span>
+          </button>
+        </mat-menu>
+      </div>
+      <div class="add-task">
+        <h1
+          style="
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+            font-weight: 600;
+            margin-left: 2%;
+          "
+        >
+          + Add task :
+        </h1>
+        <div style="display: flex; flex-direction: row; margin-left: 10%; margin-bottom: 2%;">
+          <h1
+            style="
+              margin-right: 2%;
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+                font-size: 20px;
+                line-height: 2.5;
+            "
+          >
+            Task's name:
+          </h1>
+          <mat-form-field appearance="fill" style="width: 60%;">
+            <input matInput style="line-height: 0.1;">
+          </mat-form-field>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

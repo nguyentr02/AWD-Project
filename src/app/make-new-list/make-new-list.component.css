@@ -1,0 +1,75 @@
+.make-new-list {
+    background-repeat: no-repeat;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsFDTIwfR3MBHB1DF_iqzFi0VCoVxanF_09AL8YqseEY2slNKqYwJb6Xhs4agFO-Q0t7s&usqp=CAU");
+    background-size: cover;
+    width: 100%;
+    height: 87%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.title {
+    font-size: 55px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+form {
+    width: 94%;
+    margin-left: 3%;
+    display: inline-block;
+}
+
+.new-name {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.new-name mat-form-field {
+    width: 87%;
+}
+
+.new-name .mat-form-field-appearance-fill .mat-form-field-flex {
+    padding-top: 0;
+}
+
+.new-tasks {
+    width: 95%;
+    background-color: aliceblue;
+    height: 5%;
+    margin-bottom: 1%;
+    border-radius: 20px;
+}
+
+.adding {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 2%;
+}
+
+.add-menu {
+    padding-left: 70%;
+    padding: 0 2em 0 1em;
+    float: right;
+    margin-left: -10%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.add-menu mat-form-field {
+    width: 100%;
+}
+
+.create-btn {
+    vertical-align: bottom;
+    font-weight: 500;
+    /* font-size: 30px; */
+    width: 10%;
+    margin-left: 45%;
+    height: 50px;
+}

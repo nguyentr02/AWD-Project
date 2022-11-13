@@ -1,0 +1,144 @@
+<app-navbar></app-navbar>
+<div class="profile">
+  <h1
+    style="
+      width: 100%;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
+      font-size: 55px;
+      margin-left: 3%;
+      margin-top: 2%;
+    "
+  >
+    My Profile
+  </h1>
+  <div class="container">
+    <div class="profile-picture">
+      <button
+        style="
+          margin-left: 14%;
+          scale: 2;
+          border-radius: 50%;
+          position: absolute;
+        "
+      >
+        <mat-icon style="line-height: 1.2">camera_alt</mat-icon>
+      </button>
+      <img
+        src="https://previews.123rf.com/images/veronawinner/veronawinner1904/veronawinner190400011/124072712-person-icon-in-line-style-man-symbol-isolated-on-white-background-simple-avatar-abstract-icon-in-bla.jpg"
+        alt=""
+        style="width: 60%; position: relative; border-radius: 50%"
+      />
+      <h1
+        style="
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-size: 35px;
+          margin-top: 2%;
+          margin-left: 12%;
+        "
+      >
+        User name
+      </h1>
+    </div>
+    <div class="profile-infor">
+      <form>
+        <div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              padding-right: 0;
+              margin-right: 0;
+            "
+          >
+            <div style="display: flex; flex-direction: row; margin-right: 4%">
+              <h1 id="headline">First name:</h1>
+              <mat-form-field appearance="fill">
+                <input matInput type="text" />
+                <mat-icon matSuffix>edit</mat-icon>
+              </mat-form-field>
+            </div>
+            <div style="display: flex; flex-direction: row">
+              <h1 id="headline">Last name:</h1>
+              <mat-form-field appearance="fill" style="width: 60%">
+                <input matInput type="text" />
+                <mat-icon matSuffix>edit</mat-icon>
+              </mat-form-field>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: row">
+            <h1 id="headline">Email:</h1>
+            <mat-form-field appearance="fill" style="width: 60%">
+              <input matInput type="email" />
+              <mat-icon matSuffix>edit</mat-icon>
+            </mat-form-field>
+          </div>
+          <h1
+            style="
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+              font-size: 35px;
+              text-align: center;
+            "
+          >
+            Change Password
+          </h1>
+          <div style="display: flex; flex-direction: row">
+            <h1 id="headline">Current Password:</h1>
+            <mat-form-field appearance="fill" style="width: 60%">
+              <input
+                class="input"
+                matInput
+                [type]="hide1 ? 'password' : 'text'"
+                required
+              />
+              <button mat-icon-button matSuffix (click)="hide1 = !hide1">
+                <mat-icon>{{
+                  hide1 ? "visibility_off" : "visibility"
+                }}</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+          <div style="display: flex; flex-direction: row">
+            <h1 id="headline">New Password:</h1>
+            <mat-form-field appearance="fill" style="width: 60%">
+              <input
+                class="input"
+                matInput
+                [type]="hide ? 'password' : 'text'"
+                required
+              />
+              <button mat-icon-button matSuffix (click)="hide = !hide">
+                <mat-icon>{{
+                  hide ? "visibility_off" : "visibility"
+                }}</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+          <div style="display: flex; flex-direction: row">
+            <h1 id="headline">Confirm Password:</h1>
+            <mat-form-field appearance="fill" style="width: 60%">
+              <input
+                class="input"
+                matInput
+                [type]="hide2 ? 'password' : 'text'"
+                required
+              />
+              <button mat-icon-button matSuffix (click)="hide2 = !hide2">
+                <mat-icon>{{
+                  hide2 ? "visibility_off" : "visibility"
+                }}</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="btn-container" >
+    <button mat-raised-button color="warn" style="width:15%; font-size: 23px; margin-right: 10%;">Save changes</button>
+    <button mat-raised-button color="primary" style="width:15%; font-size: 23px;">Log out</button>
+  </div>
+</div>

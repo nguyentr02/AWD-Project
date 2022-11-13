@@ -1,0 +1,23 @@
+.navbar {
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    height: 8%;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+img {
+    width: 15%;
+    height: 80px;
+    margin-top: 0.5%;
+    margin-left: 1%;
+}
+
+input::placeholder {
+    font-size: 19px;
+}
+
+input {
+    font-size: 15px;
+}

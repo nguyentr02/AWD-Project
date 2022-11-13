@@ -1,0 +1,75 @@
+<app-navbar></app-navbar>
+<div class="make-new-list">
+  <h1 class="title">MAKE NEW LIST</h1>
+
+  <form>
+    <div class="new-name">
+      <h1 style="font-size: 30px; line-height: 2.5; margin-right: 2%">Name:</h1>
+      <mat-form-field appearance="fill">
+        <input
+          matInput
+          type="text"
+          style="font-size: 20px"
+          placeholder="Type here"
+        />
+      </mat-form-field>
+    </div>
+    <h1
+      style="
+        font-size: 44px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        margin-bottom: 2%;
+      "
+    >
+      Task in your list:
+    </h1>
+    <div class="new-tasks">
+      <h1
+        style="
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+            sans-serif;
+          font-size: 25px;
+          padding-left: 2%;
+        "
+      >
+        Play game
+      </h1>
+    </div>
+    
+    <div style="width: 100%; height: auto">
+      <button
+        mat-mini-fab
+        color="warn"
+        style="float: right; margin-bottom: 2%; margin-right: 4%"
+      >
+        <mat-icon>add</mat-icon>
+      </button>
+      <div class="adding">
+        <div class="add-menu">
+          <h1
+            style="
+              font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+                sans-serif;
+              font-size: 18px;
+              margin-bottom: -1%;
+              margin-left: 5%;
+            "
+          >
+            Task name:
+          </h1>
+          <mat-form-field appearance="fill">
+            <input matInput type="text" style="font-size: 20px" />
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <div style="width: 100%; margin-top: 10%; align-items:center;">
+      <button mat-raised-button class="create-btn" color="primary" routerLink="/main">
+        CREATE<mat-icon color="accent" style="line-height: 0.8"
+          >call_merge</mat-icon
+        >
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,35 @@
+<div class="login">
+  <img
+    class="icon"
+    src="https://thaibeveragecan.com/wp-content/uploads/2022/06/TBC-Lettermark.png"
+  />
+
+  <div class="login-board">
+    <form style="display: flex; flex-direction:column;">
+      <h1 class="login-title">Welcome</h1>
+      <mat-form-field appearance="fill">
+        <mat-label>Email address</mat-label>
+        <input class="input" matInput type="email" placeholder="person@example.com" [formControl]="email" required />
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input class="input" matInput [type]="hide ? 'password' : 'text'"  required />
+        <button mat-icon-button matSuffix (click)="hide = !hide" >
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+
+      <section style="margin-left: 20%;">
+        <mat-checkbox color="primary">Remember me!</mat-checkbox>
+        <a style="float: right; margin-right: 25%; font-size: 17px; text-decoration: none;" routerLink="/forgot-password">Forget password ?
+        </a>
+      </section>
+
+      <button class="submit-btn" mat-raised-button color="primary" type="submit" routerLink="/main">Login</button>
+    </form>
+
+    <p style="font-size: 20px; margin-top:4%; margin-left: 36%; margin-bottom:3%;">Not a member? <a routerLink="/register">Sign up</a> now</p>
+  </div>
+</div>
